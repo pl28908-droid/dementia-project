@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMARAN | Cognitive Assistance & Memory Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --ink:#172326; --muted:#647477; --paper:#f6f8f5; --green:#1f6557; --mint:#dceee5; --line:#e1e9e4; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:"DM Sans",sans-serif; }
+    nav { display:flex; justify-content:space-between; align-items:center; max-width:1160px; margin:auto; padding:24px 28px; }
+    .brand { font:800 23px Manrope,sans-serif; letter-spacing:2px; color:var(--green); }
+    nav a { color:var(--ink); text-decoration:none; margin-left:25px; font-size:14px; }
+    .hero { max-width:1160px; margin:40px auto 70px; padding:70px 28px; display:grid; grid-template-columns:1.1fr .9fr; gap:45px; align-items:center; }
+    .eyebrow { color:var(--green); font-weight:700; letter-spacing:2px; font-size:12px; text-transform:uppercase; }
+    h1 { font:800 clamp(42px,6vw,70px)/1.08 Manrope,sans-serif; margin:18px 0; letter-spacing:-2.5px; }
+    h1 span { color:var(--green); }
+    .lead { color:var(--muted); font-size:18px; line-height:1.8; max-width:590px; }
+    .actions { display:flex; gap:14px; margin-top:30px; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:14px 21px; border-radius:8px; background:var(--green); color:white; text-decoration:none; font-weight:700; }
+    .btn.secondary { background:white; color:var(--green); border:1px solid var(--line); }
+    .visual { background:var(--mint); border-radius:28px; min-height:390px; padding:30px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .panel { background:#fff; width:100%; max-width:390px; border-radius:18px; padding:24px; box-shadow:0 18px 50px #245b4718; }
+    .panel h3 { font:700 17px Manrope; margin:0 0 18px; }
+    .metric { display:flex; justify-content:space-between; padding:13px 0; border-bottom:1px solid var(--line); color:var(--muted); font-size:14px; }
+    .metric strong { color:var(--ink); }
+    .pill { display:inline-block; background:#e8f4ec; color:var(--green); border-radius:20px; padding:7px 12px; font-size:12px; font-weight:700; margin-top:17px; }
+    section { max-width:1160px; margin:0 auto; padding:30px 28px 75px; }
+    .section-head { max-width:650px; margin-bottom:30px; }
+    h2 { font:800 34px Manrope; margin:8px 0 12px; }
+    .section-head p,.card p { color:var(--muted); line-height:1.7; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:white; border:1px solid var(--line); border-radius:16px; padding:25px; }
+    .number { color:var(--green); font:800 13px Manrope; }
+    .card h3 { font:700 19px Manrope; margin:14px 0 8px; }
+    .tech { background:#edf3ef; border-radius:16px; padding:28px; display:flex; flex-wrap:wrap; gap:10px; }
+    .tech span { background:white; border:1px solid var(--line); border-radius:20px; padding:9px 14px; font-size:13px; font-weight:600; }
+    footer { border-top:1px solid var(--line); padding:25px 28px; color:var(--muted); text-align:center; font-size:13px; }
+    .notice { font-size:12px; color:#697879; line-height:1.6; margin-top:25px; }
+    @media(max-width:800px) { .hero { grid-template-columns:1fr; margin-top:10px; padding-top:35px; } .cards { grid-template-columns:1fr; } nav div:last-child { display:none; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">SMARAN</div>
+    <div><a href="#approach">Approach</a><a href="#features">Features</a><a href="/docs">API Docs</a></div>
+  </nav>
+  <main>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Personalized cognitive assistance</div>
+        <h1>Keep memories close. <span>Make every activity personal.</span></h1>
+        <p class="lead">SMARAN is a prototype platform exploring how interactive cognitive activities, behavioral performance insights and user-provided memory notes can come together in one supportive experience.</p>
+        <div class="actions">
+          <a class="btn" href="/docs">Explore the API</a>
+          <a class="btn secondary" href="#features">Discover the concept</a>
+        </div>
+        <p class="notice">A student research and engineering prototype. Not intended for dementia diagnosis, treatment, or clinical decision-making.</p>
+      </div>
+      <div class="visual">
+        <div class="panel">
+          <h3>Activity overview</h3>
+          <div class="metric"><span>Activity</span><strong>Sequence Recall</strong></div>
+          <div class="metric"><span>Accuracy</span><strong>82%</strong></div>
+          <div class="metric"><span>Time taken</span><strong>01:24</strong></div>
+          <div class="metric"><span>Next activity</span><strong>Memory Match</strong></div>
+          <span class="pill">Illustrative interface preview</span>
+        </div>
+      </div>
+    </div>
+    <section id="approach">
+      <div class="section-head">
+        <div class="eyebrow">The approach</div>
+        <h2>Support built around the individual.</h2>
+        <p>The prototype focuses on recording activity interactions, understanding session-level patterns, and making stored personal notes easier to revisit.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="number">01 / ENGAGE</div><h3>Interactive activities</h3><p>Short memory, sequence-recall and attention activities with adjustable difficulty and measurable session metrics.</p></article>
+        <article class="card"><div class="number">02 / UNDERSTAND</div><h3>Behavioral insights</h3><p>A Scikit-learn pipeline demonstrates how structured session metrics can be analyzed and categorized for a prototype workflow.</p></article>
+        <article class="card"><div class="number">03 / RECALL</div><h3>Personal memory notes</h3><p>Caregiver- or family-entered notes can be stored and retrieved through a simple API, with future scope for semantic retrieval.</p></article>
+      </div>
+    </section>
+    <section id="features">
+      <div class="section-head"><div class="eyebrow">Technology</div><h2>Built with a practical ML-first stack.</h2><p>Modular Python code separates data generation, model training, inference, database access and API routes.</p></div>
+      <div class="tech"><span>Python</span><span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>FastAPI</span><span>PostgreSQL-ready</span><span>SQLAlchemy</span><span>Joblib</span></div>
+    </section>
+  </main>
+  <footer>SMARAN · Personalized Cognitive Assistance & Memory Support · Prototype</footer>
+</body>
+</html>
